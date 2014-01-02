@@ -5,7 +5,7 @@ Project descriptions comming soon!!!
 
 License Infomation
 ----------
-Copyright &copy; 2013 xxxxxx
+Copyright &copy; 2014 takanabe
 Distributed under the [MIT License][mit].
 
-[MIT]: http://www.opensource.org/licenses/mit-license.php
+[MIT]: https://github.com/takanabe/HHKPro2KeyRemapForWinMac/blob/master/LICENSE.txt
