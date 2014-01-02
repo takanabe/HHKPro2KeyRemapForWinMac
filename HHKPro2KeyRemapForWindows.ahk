@@ -752,7 +752,7 @@ n::Send,{F3}
 
 ; Vim comamnd mode {{{
 #If WInActive("ahk_group VimGroup") and (VimMode="Vim_Normal")
-:::VimSetMode("Command") ;(:)
+`;::VimSetMode("Command") ;(:)
 #If WInActive("ahk_group VimGroup") and (VimMode="Command")
 w::VimSetMode("Command_w")
 q::VimSetMode("Command_q")
@@ -782,6 +782,7 @@ Return::
 ; }}} Vim command mode
 #If
 ; }}} Vim Mode
+
 
 ;For my happy hacking keyboard professional 2 settings
 ;====================================== Definition of Control keys ======================================
@@ -818,12 +819,14 @@ If GetKeyState("Shift", "P")
 
 ;====================================== Definition of function keys ======================================
 ^k::Send,{F7}
-^vkBAsc028::Send,{F10}
+^vkBBsc027::Send,{F10}
 
 
 ;====================================== IME mode change ======================================
 LShift & Space::Send,{vkF4sc029}
 
-;====================================== Switch ;(vkBBsc027) <-> :(vkBAsc028) ======================================
+;====================================== Swap ;(vkBBsc027) <-> :(vkBAsc028) ======================================
 `;:::
-Shift & vkBAsc027::Send,`;
+$+`;::Send,`;
+
+;================================================================================================================
